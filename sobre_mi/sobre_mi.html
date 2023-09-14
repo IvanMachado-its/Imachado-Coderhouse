@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página Personal</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="..\css\style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&display=swap" rel="stylesheet">
+</head>
+
+<header class="navbar-background">
+    <div class="text-center">
+        <a class="rounded mx-auto d-block" href="../index.html"><img src="../img/logo.png"></a>
+       </div>
+    <nav class="navbar">
+      <button id="menu-btn" class="menu-icon">&#9776;</button>
+      <ul class="nav-list">
+        <li><a class="boton" href="../servicios/servicios.html">Servicios</a></li>
+        <li><a class="boton" href="../sobre_mi/sobre_mi.html">Sobre mi</a></li>
+        <li><a class="boton" href="../portafolio/portafolio.html">Portafolio</a></li>
+        <li><a class="boton" href="../contacto/contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+ 
+    <script>
+        const menuButton = document.getElementById('menu-btn');
+        const navList = document.querySelector('.nav-list');
+      
+        menuButton.addEventListener('click', () => {
+          navList.style.display = navList.style.display === 'block' ? 'none' : 'block';
+        });
+      </script>
+      </header>
+      <body>
+        
+      
+      <article class="body-profile">
+    <div class="container-profile">
+        <div class="profile">
+            <a href="../index.html">
+            <img src="../img/profile_picture.png" alt="Mi Foto" class="profile-picture"></a>
+            <div class="info">
+                <h1>Nombre Apellido</h1>
+                <p>Desarrollador Web</p>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/tu-perfil" target="_blank">
+                        <img src="../img/linkedin_icon.png" alt="LinkedIn">
+                    </a>
+                    <a href="https://www.twitter.com/tu-perfil" target="_blank">
+                        <img src="../img/twitter_icon.png" alt="Twitter">
+                    </a>
+                    <a href="https://www.instagram.com/tu-perfil" target="_blank">
+                        <img src="../img/instagram_icon.png" alt="Instagram">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora eos dolorum placeat nobis facilis rerum autem quis porro? Totam ab sint dolor doloremque necessitatibus aperiam modi beatae asperiores voluptatibus deserunt, qui recusandae perspiciatis neque voluptatem minus dolorem itaque repudiandae ipsa cum, odit ducimus doloribus unde provident ut? Impedit ex alias explicabo ipsa ipsum iusto possimus, repellat officia ipsam accusantium. Quod ut tenetur reiciendis nulla eius. Laboriosam nihil beatae libero! Sequi repudiandae tempore ducimus, expedita explicabo rem fuga ratione enim! Sit debitis aliquid recusandae amet ex. Esse excepturi similique tenetur suscipit qui minima voluptatibus illum doloremque pariatur iste aliquid consectetur quasi placeat consequatur minus, repellat laudantium et veritatis quas. Reprehenderit aliquid necessitatibus commodi dolor architecto? Provident dolorum tenetur commodi consequatur voluptatem voluptates dolor fugit iste distinctio quam at ut, soluta eaque ab voluptas dicta voluptate sint in corrupti expedita. Recusandae fugit placeat autem libero suscipit doloremque minima facilis architecto aut, quos reprehenderit ullam rerum veniam voluptate dolorum in laborum neque necessitatibus itaque nostrum distinctio. Expedita reiciendis, sed repellendus ratione quos, molestias qui quidem autem repellat ipsum deleniti quas provident similique magnam architecto fugit. Accusamus tempora facilis voluptatem sapiente, vero commodi ipsa qui rem? Illo numquam hic tempora! Velit perspiciatis, totam nostrum eaque eligendi, aliquid reprehenderit voluptates ducimus fugiat repellat laboriosam nisi? Porro sed amet quo at delectus? Quo ex reprehenderit consectetur quibusdam corrupti optio. Numquam a inventore accusantium id deserunt at! Quis, dignissimos qui. Dolorum quis, aspernatur voluptate atque cumque optio illo, quod aliquam reiciendis corrupti hic, id repellendus deleniti nihil dicta. Asperiores vel laudantium perspiciatis dolorum accusantium. Reiciendis ipsam modi iste facilis, nam cumque! Vel dolore tenetur quos mollitia reiciendis perferendis placeat nihil recusandae enim, nostrum ullam officia id aliquam vero iusto! A iste deleniti vel adipisci obcaecati ab voluptatibus! Neque obcaecati cumque, at atque expedita quam accusamus repellat exercitationem.</p>
+    </article></body>
+        <footer>
+            <div class="footer-container">
+                <div class="social-links">
+                    <a href="https://facebook.com/tuusuario" target="_blank"><img src="../img/linkedin_icon.png" alt="Facebook"></a>
+                    <a href="https://twitter.com/tuusuario" target="_blank"><img src="../img/twitter_icon.png" alt="Twitter"></a>
+                    <a href="https://instagram.com/tuusuario" target="_blank"><img src="../img/instagram_icon.png" alt="Instagram"></a>
+                </div>
+                <div class="contact-info">
+                    <p>Contacto: info@example.com</p>
+                    <p>Teléfono: (123) 456-7890</p>
+                </div>
+            </div>
+        </footer>
+    
+</html>
