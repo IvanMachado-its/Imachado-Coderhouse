@@ -350,13 +350,14 @@ section.Servicios ul {
     border-radius: 0.3rem;
   }
   
-  .services {
-    text-align: center;
-    padding: 2rem;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)); /* Utilizamos auto-fit para ajustar el número de columnas automáticamente */
-    gap: 2rem; /* Agregamos espacio entre los elementos */
-  }
+
+    .services {
+      text-align: center;
+      padding: 2rem;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr); /* Dos columnas de igual tamaño */
+      gap: 4rem; /* Agregamos espacio entre los elementos */
+    }
   
   .service {
     background-color: #fff;
@@ -364,12 +365,13 @@ section.Servicios ul {
     box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.3);
     padding: 1rem;
     text-align: center;
+    margin-left: 1rem;
+    margin-right: 1rem;
+
+
   }
   
-  .service img {
-    width: 10rem; /* Utilizamos rem para el tamaño de las imágenes */
-    height: 10rem;
-  }
+
   
   /* Media query para dispositivos móviles (opcional si lo deseas) */
   @media (max-width: 678px) {
@@ -382,6 +384,7 @@ section.Servicios ul {
       gap: 1rem;
       text-align: center;
       padding: 1rem;
+
     }
   
     .service img {
