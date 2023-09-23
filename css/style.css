@@ -123,13 +123,15 @@ body {
  /* CSS del html contacto*/
  .contact-body {
     font-family: 'Open Sans', sans-serif;
-    background-color: #f5f5f5;
+    
 }
-
+.fondo-contact{
+  background-image: url('../img/contactos.jpg');
+}
 .container-contact {
     max-width: 60%; /* Cambiado a porcentaje */
-    margin: 0 auto;
-    padding: 4%; /* Cambiado a porcentaje */
+    margin: 3rem auto;
+    padding: 3rem; /* Cambiado a porcentaje */
     background-color: #ffffff;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -137,6 +139,8 @@ body {
 
 .form-contact {
     display: flex;
+    justify-content: center;
+    justify-items: center;
     flex-direction: column;
 }
 
