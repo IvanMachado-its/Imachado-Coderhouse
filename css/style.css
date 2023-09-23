@@ -645,3 +645,35 @@ section.Servicios ul {
 .btn-dark{
   background-color: #6E07F3;
 }
+
+.container-nosotros{
+
+  background-color: #6E07F3;
+  padding: 3rem;
+  display: grid;
+  grid-row: auto;
+grid-template-columns: 1fr 1fr;
+gap: 3rem;
+
+}
+.texto-nosotros{
+  color: #ffffff;
+  text-align: justify;
+  margin: 4rem;
+
+}
+.titulo-nosotros{
+  text-align: center;
+  padding: 2rem;
+  color: #000;
+  
+}
+.img-nosotros{
+  height: 20rem;
+ 
+}
+@media (max-width: 768px) {
+  .container-nosotros {
+    grid-template-columns: 1fr; /* Cambia a una sola columna en pantallas de 768px o menos */
+  }
+}
