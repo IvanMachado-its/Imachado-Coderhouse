@@ -157,6 +157,7 @@ body {
     font-weight: bold;
     display: flex;
     align-items: center;
+    margin: 0.6rem;
 }
 
 /* Ajustar el checkbox más cerca del texto */
@@ -183,7 +184,7 @@ body {
 }
 
 .buttons-contact button[type="submit"] {
-    background-color: #000000;
+    background-color: #6E07F3;
     color: #fff;
 }
 
@@ -193,8 +194,8 @@ body {
 }
 
 .buttons-contact button:hover {
-    background-color: #ffffff;
-    color: black;
+    background-color: #000000;
+    color: white;
 }
 
 /* Termina el css de */
@@ -220,6 +221,7 @@ body {
     border-radius: 25px;
     transition: background-color 0.3s, color 0.3s;
 }
+
 
 .about-button:hover, .servicios-boton:hover, .sotify-boton:hover, .contacto-boton:hover {
     background-color: white;
