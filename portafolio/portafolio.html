@@ -9,7 +9,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&display=swap" rel="stylesheet">
-  <title>Barra de Navegación</title>
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />  
+<title>Barra de Navegación</title>
 </head>
 
 <header class="navbar-background">
@@ -50,8 +51,12 @@
       
     
     <div class="row text-center">
+      
       <div class="col">
-        <div class="card h-100 border-dark">
+        <div data-aos="fade-down"
+        data-aos-easing="linear"
+        data-aos-duration="1500">
+        <div class="card-left card h-100 border-dark">
           <img src="..\img\mentor1.png" class="card-img-top" alt="...">
           <div class="card-body text-dark">
             <h5 class="card-title">Mentoría a la medida</h5>
@@ -59,15 +64,18 @@
             <h1 class="display-6" style="color: #6E07F3;"><strong>U$S 100</strong></h1>
           </div>
           
-          <div class="card-footer d-grid gap-2">
+          <div class="card-center card-footer d-grid gap-2">
            <a href="https://mpago.la/2V1aYJN" target="_blank">
            <button type="button" class="btn btn-dark">
               Reservar una sesión</button></a>
           </div>
         </div>
-      </div>
+      </div></div>
       <div class="col">
-        <div class="card h-100 border-dark">
+        <div data-aos="fade-down"
+        data-aos-easing="linear"
+        data-aos-duration="1500">
+        <div class="card-center card h-100 border-dark">
           <img src="..\img\mentor2.png" class="card-img-top" alt="...">
           <div class="card-body text-dark">
             <h5 class="card-title">Soporte de Producción</h5>
@@ -79,9 +87,12 @@
             <button type="button" class="btn btn-dark">Mejora tus habilidades</button></a>
           </div>
         </div>
-      </div>
+      </div></div>
       <div class="col">
-        <div class="card h-100 border-dark">
+        <div data-aos="fade-down"
+        data-aos-easing="linear"
+     data-aos-duration="1500">
+        <div class="card-right card h-100 border-dark">
           <img src="..\img\mentor3.png" class="card-img-top" alt="...">
           <div class="card-body text-dark">
             <h5 class="card-title">Aprendizaje Personalizado</h5>
@@ -90,16 +101,18 @@
           </div>
           <div class="card-footer d-grid gap-2">
             <a href="https://mpago.la/2V1aYJN" target="_blank">
-            <button type="button" class="btn btn-dark">Comienza tu viaje
-
-            </button></a>
+            <button type="button" class="btn btn-dark">Comienza tu viaje</button></a>
           </div>
         </div>
-      </div>
+      </div></div>
     </div>
       
     </section>
 </body>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 <footer>
   <div class="footer-container">
       <div class="social-links">
