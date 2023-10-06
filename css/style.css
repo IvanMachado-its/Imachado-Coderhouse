@@ -1,20 +1,84 @@
-/* Estilos generales para todo el sitio */
+@charset "UTF-8";
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   margin: 0;
   padding: 0;
 }
+@media (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  body {
+    font-size: 18px;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1920px) {
+  body {
+    font-size: 20px;
+  }
+}
+@media (min-width: 1921px) {
+  body {
+    font-size: 24px;
+  }
+}
 
-/* Estilos para la barra de navegación */
 .navbar-background {
   background-color: black;
   padding: 1rem;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
+}
+@media (max-width: 768px) {
+  .navbar-background {
+    font-size: 16px;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .navbar-background {
+    font-size: 18px;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1920px) {
+  .navbar-background {
+    font-size: 20px;
+  }
+}
+@media (min-width: 1921px) {
+  .navbar-background {
+    font-size: 24px;
+  }
 }
 
-/* Estilos para el logotipo */
-.logo {
-  background-color: #000;
+.footer-container {
+  text-align: center;
+  padding: 1rem;
+  background-color: #000000;
+  color: #fff;
+  border: 1px solid #ffffff;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+}
+@media (max-width: 768px) {
+  .footer-container {
+    font-size: 16px;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .footer-container {
+    font-size: 18px;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1920px) {
+  .footer-container {
+    font-size: 20px;
+  }
+}
+@media (min-width: 1921px) {
+  .footer-container {
+    font-size: 24px;
+  }
 }
 
 /* Estilos para la navegación */
@@ -32,7 +96,7 @@ body {
 }
 
 .nav-list li {
-  margin: 0 1rem; /* Ajusta el margen horizontal de los elementos de la lista */
+  margin: 0 1rem;
   border-radius: 20px;
 }
 
@@ -54,50 +118,100 @@ body {
 /* Media query para dispositivos móviles */
 @media (max-width: 678px) {
   .navbar {
-      flex-direction: column;
-      align-items: center;
+    flex-direction: column;
+    align-items: center;
   }
-
   .nav-list {
-      text-align: center;
-      display: none;
+    text-align: center;
+    display: none;
   }
-
   .nav-list li {
-      margin: 0.3rem 0;
-      border-radius: 20px;
+    margin: 0.3rem 0;
+    border-radius: 20px;
   }
-
   .menu-icon {
-      font-size: 2rem;
-      cursor: pointer;
-      background-color: transparent;
-      border: none;
-      outline: none;
-      color: #fff;
+    font-size: 2rem;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
   }
-
   #menu-btn {
-      background-color: white;
-      color: black;
-      border: none;
-      outline: none;
-      padding: 0.5rem 1rem;
-      border-radius: 3px;
+    background-color: white;
+    color: black;
+    border: none;
+    outline: none;
+    padding: 0.5rem 1rem;
+    border-radius: 3px;
   }
-
   .menu-toggle:checked + .menu-icon + .nav-list {
-      display: block;
+    display: block;
   }
 }
+/* Estilos para los enlaces de redes sociales en el pie de página */
+.social-links {
+  text-align: center;
+  margin-top: 1rem;
+}
 
+.social-links a {
+  display: inline-block;
+  margin: 0.5rem;
+  background-color: transparent;
+  text-decoration: none;
+  border-radius: 50%;
+  transition: background-color 0.3s;
+}
+
+.social-links a img {
+  width: 3rem;
+  height: 3rem;
+}
+
+.social-links a:hover {
+  background-color: rgb(255, 255, 255);
+}
+
+@media (max-width: 678px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+  .nav-list {
+    text-align: center;
+    display: none;
+  }
+  .nav-list li {
+    margin: 0.3rem 0;
+    border-radius: 20px;
+  }
+  .menu-icon {
+    font-size: 2rem;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+  }
+  #menu-btn {
+    background-color: white;
+    color: black;
+    border: none;
+    outline: none;
+    padding: 0.5rem 1rem;
+    border-radius: 3px;
+  }
+  .menu-toggle:checked + .menu-icon + .nav-list {
+    display: block;
+  }
+}
 /* Ocultar el botón de menú en pantallas grandes */
 @media (min-width: 679px) {
   #menu-btn {
-      display: none;
+    display: none;
   }
 }
-
 /* Estilos generales para el contenido */
 .container {
   display: flex;
@@ -131,84 +245,13 @@ body {
   color: black;
 }
 
-/* Estilos para la sección con la imagen */
-section.perfil article {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-
-section.perfil img {
-  display: block;
-  margin: 0 auto;
-  max-width: 100%;
-  height: auto;
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-}
-
-/* Estilos para la sección de servicios */
-section.Servicios aside {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-
-section.Servicios h2 {
-  border-bottom: 2px solid #333;
-  padding-bottom: 5px;
-}
-
-section.Servicios ul {
-  list-style: disc;
-  padding-left: 20px;
-}
-
-/* Estilos para el pie de página */
-.footer-container {
-  text-align: center;
-  padding: 1rem;
-  background-color: #000000;
-  color: #fff;
-  border: 1px solid #ffffff;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
-  border-radius: 3px;
-}
-
-/* Estilos para los enlaces de redes sociales en el pie de página */
-.social-links {
-  text-align: center;
-  margin-top: 1rem;
-}
-
-.social-links a {
-  display: inline-block;
-  margin: 0.5rem;
-  background-color: transparent;
-  text-decoration: none;
-  border-radius: 50%;
-  transition: background-color 0.3s;
-}
-
-.social-links a img {
-  width: 32px;
-  height: 32px;
-}
-
-.social-links a:hover {
-  background-color: rgb(255, 255, 255);
-}
-
 /* Estilos para la sección de contacto */
 .contact-body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 .fondo-contact {
-  background-image: url('../img/contactos.jpg');
+  background-image: url("../img/contactos.jpg");
 }
 
 .container-contact {
@@ -227,8 +270,8 @@ section.Servicios ul {
   flex-direction: column;
 }
 
-.form-contact input[type="text"],
-.form-contact input[type="email"],
+.form-contact input[type=text],
+.form-contact input[type=email],
 .form-contact select,
 .form-contact textarea {
   padding: 2.5%;
@@ -274,12 +317,12 @@ section.Servicios ul {
   margin-left: 1%;
 }
 
-.buttons-contact button[type="submit"] {
+.buttons-contact button[type=submit] {
   background-color: #6E07F3;
   color: #fff;
 }
 
-.buttons-contact button[type="reset"] {
+.buttons-contact button[type=reset] {
   background-color: #ccc;
   color: #000;
 }
@@ -289,492 +332,212 @@ section.Servicios ul {
   color: white;
 }
 
-/* Termina el css de */
-
-
 .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 90%; /* El ancho del contenido central */
-    max-width: 1200px;
-    padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%; /* El ancho del contenido central */
+  max-width: 1200px;
+  padding: 20px;
 }
 
 /* Estilos del botón "Sobre mí" y otros botones */
 .about-button, .servicios-boton, .sotify-boton, .contacto-boton {
-    display: inline-block;
-    padding: 12px 20px; /* Ajusta el padding para espaciado */
-    margin: 5px; /* Ajusta el margen entre los botones */
-    background-color: black;
-    color: white;
-    text-decoration: none;
-    border-radius: 25px;
-    transition: background-color 0.3s, color 0.3s;
+  display: inline-block;
+  padding: 12px 20px; /* Ajusta el padding para espaciado */
+  margin: 5px; /* Ajusta el margen entre los botones */
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  border-radius: 25px;
+  transition: background-color 0.3s, color 0.3s;
 }
 
-
 .about-button:hover, .servicios-boton:hover, .sotify-boton:hover, .contacto-boton:hover {
-    background-color: white;
-    color: black;
+  background-color: white;
+  color: black;
 }
 
 /* Estilos para la sección con la imagen */
 section.perfil article {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 section.perfil img {
-    display: block;
-    margin: 0 auto;
-    max-width: 100%; /* Ajustar el ancho máximo al contenedor */
-    height: auto; /* Ajustar la altura automáticamente */
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
+  display: block;
+  margin: 0 auto;
+  max-width: 100%; /* Ajustar el ancho máximo al contenedor */
+  height: auto; /* Ajustar la altura automáticamente */
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
 }
 
 /* Estilos para la sección con los servicios */
 section.Servicios aside {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 section.Servicios h2 {
-    border-bottom: 2px solid #333;
-    padding-bottom: 5px;
+  border-bottom: 2px solid #333;
+  padding-bottom: 5px;
 }
 
 section.Servicios ul {
-    list-style: disc;
-    padding-left: 20px;
+  list-style: disc;
+  padding-left: 20px;
 }
-
-
 
 /*HTML SOBRE MI*/
-
 .body-profile {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
 }
+
 .container-profile {
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 5px;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-}
-.profile {
-    display: flex;
-    align-items: center;
-}
-.profile img {
-    width: 100px; /* Ajusta el tamaño de la imagen de perfil */
-    height: 100px; /* Ajusta el tamaño de la imagen de perfil */
-    border-radius: 50%; /* Mantén la imagen de perfil redonda */
-    margin-right: 20px;
-    background-color: transparent;
-}
-.info h1 {
-    margin: 0;
-}
-.info p {
-    margin: 5px 0;
-    color: #777;
-}
-/* Tu CSS existente para la sección .footer-container */
-.social-links {
-    text-align: center;
-    margin-top: 1rem;
-}
-
-.social-links a {
-    display: inline-block;
-    margin: 0.5rem;
-    background-color: transparent; /* Elimina el fondo de los botones */
-    text-decoration: none;
-    border-radius: 50%; /* Puedes ajustar esto para hacer que los botones tengan bordes redondeados */
-    transition: background-color 0.3s;
-}
-
-.social-links a img {
-    width: 32px; /* Ajusta el tamaño de las imágenes según tus necesidades */
-    height: 32px;
-}
-
-/* Puedes agregar un estilo de cambio de color de fondo cuando pasas el mouse sobre los botones */
-.social-links a:hover {
-    background-color: rgb(255, 255, 255); /* Cambia el color de fondo en el hover (puedes personalizar el color aquí) */
-}
-
-.bio h2 {
-    margin-top: 20px;
-}
-
-/*HTML SERVICIOS*/
-
-
-/* Tu CSS existente para pantallas grandes */
-
-/* Cambiamos las medidas de píxeles (px) a unidades de rem */
-.hero {
-    text-align: center;
-    padding: 2rem;
-    background-color: #ffffff;
-  }
-  .text-servicios{
-    margin: 3rem;
-  }
-  
-  .hero h2 {
-    margin-bottom: 1rem;
-  }
-  
-  .btn {
-    display: inline-block;
-    padding: 0.5rem 1rem;
-    background-color: #000000;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 0.3rem;
-  }
-  
-
-    .services {
-      text-align: center;
-      padding: 2rem;
-      display: grid;
-      grid-template-columns: repeat(2, 1fr); /* Dos columnas de igual tamaño */
-      gap: 4rem; /* Agregamos espacio entre los elementos */
-    }
-  
-  .service {
-    background-color: #fff;
-    border-radius: 0.5rem;
-    box-shadow: 0 0.2rem 0.4rem #6E07F3;
-    padding: 1rem;
-    text-align: center;
-    margin-left: 1rem;
-    margin-right: 1rem;
-
-
-  }
-  
-
-  
-  /* Media query para dispositivos móviles (opcional si lo deseas) */
-  @media (max-width: 678px) {
-    .hero {
-      padding: 1rem;
-    }
-  
-    .services {
-      grid-template-columns: 1fr; /* Cambia a una sola columna en dispositivos móviles */
-      gap: 1rem;
-      text-align: center;
-      padding: 1rem;
-
-    }
-  
-    .service img {
-      width: 8rem; /* Reduce el tamaño de las imágenes en dispositivos móviles */
-      height: 8rem;
-    }
-  }
-  
-  .footer-container {
-    text-align: center;
-    padding: 1rem;
-    background-color: #000000;
-    color: #fff;
-    border: 1px solid #ffffff; /* Agrega un borde */
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); /* Agrega una sombra */
-    border-radius: 3px;
-}
-
-
-
-/*-------------------------------------HTML INDEX-----------------------------------*/
-
-/* Estilos para la sección .perfil */
-.index-section{
-    text-align: center;
-    padding: 2rem;
-    display: flex;
-    justify-content: space-around;
-        font-family: 'Open Sans', sans-serif;
-}
-
-.index-div {
-    flex: 1;
-    margin: 0 1rem;
-    padding: 1rem;
-    background-color: #fff;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-    text-align: center;
-    color: #000000;
-}
-
-.index-div-info{
-    flex: 1;
-    margin: 0 1rem;
-    padding: 1rem;
-    background-color: #ffffff;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-    text-align: center;
-    color: #000000;
-}
-
-.index-div img {
-    width: 150px; /* Tamaño de las imágenes */
-    height: 150px;
-    margin-bottom: 1rem;
-    border-radius: 50%;
-
-}
-
-.index-article{
-
-    text-align: center;
-    padding: 2rem;
-    display: flex;
-    justify-content: space-around;
-        font-family: 'Open Sans', sans-serif;
-
-}
-.article-div{
-    flex: 1;
-    margin: 0 1rem;
-    padding: 1rem;
-    background-color: #fff;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
-    text-align: center;
-    color: #000000;
-}
-@media (max-width: 768px) {
-    .index-section {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .index-div, .index-div-info, .article-div {
-      flex: 1;
-      margin: 0.5rem;
-      padding: 1rem;
-    }
-  
-    .index-div h1 {
-      font-size: 1.5rem;
-    }
-  
- 
-  }
-/* --------------------------portafolio-------------------------------- */
-
-.portafolio-section {
-  display: flex;
-  justify-content: center;
-  margin-top: 3%; /* Espacio por encima de las tarjetas en porcentaje */
-  margin-bottom: 3%; /* Espacio por debajo de las tarjetas en porcentaje */
-  padding: 30px;
-}
-
-.container-win {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.window {
-  position: absolute;
-  height: 200px;
-  width: 300px;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
   background-color: #fff;
-  border: 2px solid #333;
-  border-radius: 15px;
-  overflow: hidden;
-}
-
-.window-title {
-  height: 30px;
-  background-color: #333;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 10px;
-  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
-}
-
-.window-title p {
-  color: #fff;
-  font-weight: bold;
-  margin: 0;
-  padding: 0;
-  text-align: left;
-}
-
-.window-buttons {
-  display: flex;
-  align-items: center;
-}
-
-.window-button {
-  width: 10px;
-  height: 10px;
   border-radius: 5px;
-  margin: 5px;
-  transition: background-color 0.2s ease;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.window-button.close {
-  background-color: #f00;
+.profile {
+  display: flex;
+  align-items: center;
 }
 
-.window-button.close:hover {
-  background-color: rgb(182, 2, 2);
-  cursor: pointer;
+.profile img {
+  width: 100px; /* Ajusta el tamaño de la imagen de perfil */
+  height: 100px; /* Ajusta el tamaño de la imagen de perfil */
+  border-radius: 50%; /* Mantén la imagen de perfil redonda */
+  margin-right: 20px;
+  background-color: transparent;
 }
 
-.window-button.reduce {
-  background-color: #ff0;
-}
-
-.window-button.reduce:hover {
-  background-color: rgb(172, 172, 4);
-  cursor: pointer;
-}
-
-.window-button.fullscreen {
-  background-color: #0f0;
-}
-
-.window-button.fullscreen:hover {
-  background-color: rgb(7, 159, 7);
-  cursor: pointer;
-}
-
-.window-button:focus {
-  outline: none;
-}
-
-.console {
-  width: 100%;
-  height: calc(100% - 30px);
-  background-color: #000;
-  color: #fff;
-  overflow: auto;
-}
-
-.console pre {
+.info h1 {
   margin: 0;
-  padding: 5px;
-  font-size: 15px;
 }
 
-.console pre code {
-  color: #0f0;
-  outline: none;
+.info p {
+  margin: 5px 0;
+  color: #777;
 }
 
-.console::-webkit-scrollbar {
-  width: 8px;
+.hero {
+  text-align: center;
+  padding: 2rem;
+  background-color: #ffffff;
 }
 
-.console::-webkit-scrollbar-track {
-  background-color: #333;
+.text-servicios {
+  margin: 3rem;
 }
 
-.console::-webkit-scrollbar-thumb {
-  background-color: #666;
-  border-radius: 10px;
-  border: 2px solid #333;
+.hero h2 {
+  margin-bottom: 1rem;
 }
 
-.console::-webkit-scrollbar-thumb:hover {
-  background-color: #999;
+.btn {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: #000000;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 0.3rem;
 }
 
+.services {
+  text-align: center;
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Dos columnas de igual tamaño */
+  gap: 4rem; /* Agregamos espacio entre los elementos */
+}
 
-
-.card-img-top{
+.service {
+  background-color: #fff;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.2rem 0.4rem #6E07F3;
   padding: 1rem;
+  text-align: center;
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
-.row {
-  padding: 1%;
-  margin-right: 1%;
-  margin-left: 1%;
-}
-
-.col{
-  
-    /* flex: 1 0 0%; */
+/* Media query para dispositivos móviles (opcional si lo deseas) */
+@media (max-width: 678px) {
+  .hero {
     padding: 1rem;
+  }
+  .services {
+    grid-template-columns: 1fr; /* Cambia a una sola columna en dispositivos móviles */
+    gap: 1rem;
+    text-align: center;
+    padding: 1rem;
+  }
+  .service img {
+    width: 8rem; /* Reduce el tamaño de las imágenes en dispositivos móviles */
+    height: 8rem;
+  }
 }
 @media (max-width: 678px) {
-
-.col{
-  flex: auto;
+  .col {
+    flex: auto;
+  }
 }
-
-}
-
-.text-white{
-  background: rgb(255,255,255);
-  background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(110,7,243,1) 31%);
+.text-white {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(0deg, rgb(255, 255, 255) 0%, rgb(110, 7, 243) 31%);
   padding-bottom: 3rem;
 }
 
-.color{
-  color: #6E07F3;
-}
-.btn-dark{
-  background-color: #6E07F3;
+.color {
+  color: #6e07f3;
 }
 
-.container-nosotros{
+.btn-dark {
+  background-color: #6e07f3;
+}
 
-  background: rgb(0,0,0);
-background: linear-gradient(90deg, rgba(0,0,0,0.9668242296918768) 0%, rgba(110,7,243,1) 50%, rgba(0,0,0,0.9668242296918768) 100%);
-padding: 3rem;
+.container-nosotros {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.9668242297) 0%, rgb(110, 7, 243) 50%, rgba(0, 0, 0, 0.9668242297) 100%);
+  padding: 3rem;
   display: grid;
   grid-row: auto;
-grid-template-columns: 1fr 1fr;
-gap: 3rem;
-
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
 }
-.texto-nosotros{
+
+.texto-nosotros {
   color: #ffffff;
   text-align: justify;
   margin: 4rem;
-
 }
-.titulo-nosotros{
+
+.titulo-nosotros {
   text-align: center;
   padding: 2rem;
   color: #000;
-  
 }
-.img-nosotros{
+
+.img-nosotros {
   height: 20rem;
- 
 }
+
 @media (max-width: 768px) {
   .container-nosotros {
     grid-template-columns: 1fr; /* Cambia a una sola columna en pantallas de 768px o menos */
   }
 }
-
 .card-left {
   box-shadow: rgba(110, 7, 243, 0.4) -5px 5px, rgba(110, 7, 243, 0.3) -10px 10px, rgba(110, 7, 243, 0.2) -15px 15px, rgba(110, 7, 243, 0.1) -20px 20px, rgba(110, 7, 243, 0.05) -25px 25px;
 }
@@ -786,3 +549,46 @@ gap: 3rem;
 .card-right {
   box-shadow: rgba(110, 7, 243, 0.4) 5px 5px, rgba(110, 7, 243, 0.3) 10px 10px, rgba(110, 7, 243, 0.2) 15px 15px, rgba(110, 7, 243, 0.1) 20px 20px, rgba(110, 7, 243, 0.05) 25px 25px;
 }
+
+/* Estilos para la sección .testimonios */
+.testimonios-section {
+  text-align: center;
+  padding: 2rem;
+  background-color: #f4f4f4;
+  font-family: "Open Sans", sans-serif;
+}
+
+.testimonios-section h2 {
+  margin-bottom: 2rem;
+}
+
+.testimonios-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Cambia el número de columnas según tus necesidades */
+  gap: 2rem; /* Ajusta el espacio entre los testimonios */
+}
+
+.testimonio {
+  padding: 2rem;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+.testimonio img {
+  max-width: 100px; /* Ajusta el tamaño máximo de las imágenes de los testimonios */
+  height: auto;
+  border-radius: 50%;
+}
+
+.testimonio h3 {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+}
+
+.testimonio p {
+  margin-top: 0.5rem;
+  color: #777;
+}
+
+/*# sourceMappingURL=style.css.map */
