@@ -527,7 +527,12 @@ body {
   @media (max-width: 768px) {
     .container-nosotros {
       grid-template-columns: 1fr; /* Cambia a una sola columna en pantallas de 768px o menos */
-    }
+      padding: 0rem;
+          }
+          .texto-nosotros{
+            margin: 1rem;
+            padding: 1rem;
+          }
   }
   
   .card-left {
