@@ -254,6 +254,11 @@ body {
   background-image: url("../img/contactos.jpg");
 }
 
+@media (max-width: 678px) {
+  .container-contact {
+    margin: 1rem;
+  }
+}
 .container-contact {
   max-width: 60%;
   margin: 3rem auto;
