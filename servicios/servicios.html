@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&display=swap" rel="stylesheet">
-  
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">  
     <title>Venta de servicios</title>
     <link rel="shortcut icon" href="../img/favicon.ico">
 </head>
@@ -50,11 +50,12 @@
         <h3>Desarrollo de Sistemas</h3>
         <p>Desarrollo de aplicaciones y software personalizado para tu negocio.</p>
     </div>
-    <div class="service">
+   
+    <div class="service"data-aos="fade-right" data-aos-easing="ease-in-sine">
         <img src="../img/servicios-2.png" alt="Diseño Web">
         <h3>Sitio web</h3>
         <p>Creación de sitios web modernos y atractivos que se adapten a tus necesidades.</p>
-    </div>
+    </div> 
     <div class="service">
         <img src="../img/servicios-3.png" alt="App Móviles">
         <h3>App Móviles</h3>
@@ -66,7 +67,7 @@
         <p>Resolución de problemas y asistencia técnica para mantener tu negocio en funcionamiento.</p>
     </div>
 </section>
-
+</body>
 <footer>
     <div class="footer-container">
         <div class="row">
@@ -98,5 +99,9 @@
   </div>
   </div>
   </footer>
-</body>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js">
+    AOS.init();
+</script>
+
 </html>
