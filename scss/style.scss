@@ -1,9 +1,14 @@
+/* CSS Reset (normalize.css or your preferred reset) */
+@import url('normalize.css');
+
+/* Variables for Font Sizes */
 $font-size-mobile: 16px;
 $font-size-tablet: 18px;
 $font-size-desktop: 20px;
 $font-size-tv: 24px;
 
-@mixin responsive-font-size {
+/* Responsive Font Size Mixin */
+@mixin responsive-font-size() {
   @media (max-width: 768px) {
     font-size: $font-size-mobile;
   }
@@ -18,21 +23,24 @@ $font-size-tv: 24px;
   }
 }
 
-$body-font-size: $font-size-desktop; // Tamaño de fuente predeterminado para desktop
+/* Body Styles */
 body {
   font-family: 'Open Sans', sans-serif;
   margin: 0;
   padding: 0;
-  @include responsive-font-size;
+  font-size: $font-size-desktop; /* Set the default font size */
+  @include responsive-font-size();
 }
 
+/* Navbar Styles */
 .navbar-background {
   background-color: black;
   padding: 1rem;
   font-family: 'Open Sans', sans-serif;
-  @include responsive-font-size;
+  @include responsive-font-size();
 }
 
+/* Footer Styles */
 .footer-container {
   text-align: center;
   padding: 1rem;
@@ -41,110 +49,144 @@ body {
   border: 1px solid #ffffff;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
   border-radius: 3px;
-  @include responsive-font-size;
+  @include responsive-font-size();
+}
+*, ::after, ::before {
+  box-sizing: border-box;
+}
+.contact-body * {
+  box-sizing: content-box; 
 }
 
-// Resto de tus estilos
-
-/* Estilos para la navegación */
+/* Navigation Styles */
 .navbar {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-list li {
+  margin: 0 1rem;
+  border-radius: 20px;
+}
+
+/* Button Styles */
+.boton {
+  display: block;
+  padding: 1rem;
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-list li a:hover {
+  background-color: white;
+  color: black;
+  border-radius: 3%;
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 678px) {
+  .navbar {
+    flex-direction: column;
     align-items: center;
   }
-  
+
   .nav-list {
-    list-style: none;
-    display: flex;
-    margin: 0;
-    padding: 0;
+    text-align: center;
+    display: none;
   }
-  
+
   .nav-list li {
-    margin: 0 1rem;
+    margin: 0.3rem 0;
     border-radius: 20px;
   }
-  
-  .boton {
-    display: block;
-    padding: 1rem;
-    background-color: black;
-    color: white;
-    text-decoration: none;
-    transition: background-color 0.3s, color 0.3s;
+
+  /* ... other mobile-specific styles ... */
+}
+
+/* Hide Menu Button on Large Screens */
+@media (min-width: 679px) {
+  #menu-btn {
+    display: none;
   }
-  
-  .nav-list li a:hover {
-    background-color: white;
-    color: black;
-    border-radius: 3%;
-  }
-  
-  /* Media query para dispositivos móviles */
-  @media (max-width: 678px) {
-    .navbar {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .nav-list {
-      text-align: center;
-      display: none;
-    }
-  
-    .nav-list li {
-      margin: 0.3rem 0;
-      border-radius: 20px;
-    }
-  
-    .menu-icon {
-      font-size: 2rem;
-      cursor: pointer;
-      background-color: transparent;
-      border: none;
-      outline: none;
-      color: #fff;
-    }
-  
-    #menu-btn {
-      background-color: white;
-      color: black;
-      border: none;
-      outline: none;
-      padding: 0.5rem 1rem;
-      border-radius: 3px;
-    }
-  
-    .menu-toggle:checked + .menu-icon + .nav-list {
-      display: block;
-    }
-  }
-  
-  
-/* Estilos para los enlaces de redes sociales en el pie de página */
+}
+
+/* General Content Styles */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%; /* Width of the central content */
+  max-width: 1200px;
+  padding: 20px;
+}
+
+/* Button Styles for Sections */
+.about-button,
+.servicios-boton,
+.sotify-boton,
+.contacto-boton {
+  display: inline-block;
+  padding: 12px 20px;
+  margin: 5px;
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  border-radius: 25px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.about-button:hover,
+.servicios-boton:hover,
+.sotify-boton:hover,
+.contacto-boton:hover {
+  background-color: white;
+  color: black;
+}
+
+/* Contact Section Styles */
+.contact-body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.fondo-contact {
+  background-image: url('../img/contactos.jpg');
+}
+
+/* ... Rest of your styles ... */
+
+/* Social Links in Footer */
 .social-links {
-    text-align: center;
-    margin-top: 1rem;
-  }
-  
-  .social-links a {
-    display: inline-block;
-    margin: 0.5rem;
-    background-color: transparent;
-    text-decoration: none;
-    border-radius: 50%;
-    transition: background-color 0.3s;
-  }
-  
-  .social-links a img {
-    width: 3rem;
-    height: 3rem;
-  }
-  
-  .social-links a:hover {
-    background-color: rgb(255, 255, 255);
-  }
-  
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.social-links a {
+  display: inline-block;
+  margin: 0.5rem;
+  background-color: transparent;
+  text-decoration: none;
+  border-radius: 50%;
+  transition: background-color 0.3s;
+}
+
+.social-links a img {
+  width: 3rem;
+  height: 3rem;
+}
+
+.social-links a:hover {
+  background-color: rgb(255, 255, 255);
+}
   @media (max-width: 678px) {
     .navbar {
       flex-direction: column;

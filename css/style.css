@@ -1,8 +1,14 @@
 @charset "UTF-8";
+/* CSS Reset (normalize.css or your preferred reset) */
+@import url("normalize.css");
+/* Variables for Font Sizes */
+/* Responsive Font Size Mixin */
+/* Body Styles */
 body {
   font-family: "Open Sans", sans-serif;
   margin: 0;
   padding: 0;
+  font-size: 20px; /* Set the default font size */
 }
 @media (max-width: 768px) {
   body {
@@ -25,6 +31,7 @@ body {
   }
 }
 
+/* Navbar Styles */
 .navbar-background {
   background-color: black;
   padding: 1rem;
@@ -51,6 +58,7 @@ body {
   }
 }
 
+/* Footer Styles */
 .footer-container {
   text-align: center;
   padding: 1rem;
@@ -81,7 +89,15 @@ body {
   }
 }
 
-/* Estilos para la navegación */
+*, ::after, ::before {
+  box-sizing: border-box;
+}
+
+.contact-body * {
+  box-sizing: content-box;
+}
+
+/* Navigation Styles */
 .navbar {
   display: flex;
   justify-content: center;
@@ -100,6 +116,7 @@ body {
   border-radius: 20px;
 }
 
+/* Button Styles */
 .boton {
   display: block;
   padding: 1rem;
@@ -115,7 +132,7 @@ body {
   border-radius: 3%;
 }
 
-/* Media query para dispositivos móviles */
+/* Media Query for Mobile Devices */
 @media (max-width: 678px) {
   .navbar {
     flex-direction: column;
@@ -129,27 +146,58 @@ body {
     margin: 0.3rem 0;
     border-radius: 20px;
   }
-  .menu-icon {
-    font-size: 2rem;
-    cursor: pointer;
-    background-color: transparent;
-    border: none;
-    outline: none;
-    color: #fff;
-  }
+  /* ... other mobile-specific styles ... */
+}
+/* Hide Menu Button on Large Screens */
+@media (min-width: 679px) {
   #menu-btn {
-    background-color: white;
-    color: black;
-    border: none;
-    outline: none;
-    padding: 0.5rem 1rem;
-    border-radius: 3px;
-  }
-  .menu-toggle:checked + .menu-icon + .nav-list {
-    display: block;
+    display: none;
   }
 }
-/* Estilos para los enlaces de redes sociales en el pie de página */
+/* General Content Styles */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%; /* Width of the central content */
+  max-width: 1200px;
+  padding: 20px;
+}
+
+/* Button Styles for Sections */
+.about-button,
+.servicios-boton,
+.sotify-boton,
+.contacto-boton {
+  display: inline-block;
+  padding: 12px 20px;
+  margin: 5px;
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  border-radius: 25px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.about-button:hover,
+.servicios-boton:hover,
+.sotify-boton:hover,
+.contacto-boton:hover {
+  background-color: white;
+  color: black;
+}
+
+/* Contact Section Styles */
+.contact-body {
+  font-family: "Open Sans", sans-serif;
+}
+
+.fondo-contact {
+  background-image: url("../img/contactos.jpg");
+}
+
+/* ... Rest of your styles ... */
+/* Social Links in Footer */
 .social-links {
   text-align: center;
   margin-top: 1rem;
