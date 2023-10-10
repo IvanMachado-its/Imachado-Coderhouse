@@ -1,0 +1,49 @@
+/* Navbar Styles */
+.navbar-background {
+    background-color: black;
+    padding: 1rem;
+    font-family: 'Open Sans', sans-serif;
+    @include responsive-font-size();
+  }
+  .navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .nav-list {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-list li {
+    margin: 0 1rem;
+    border-radius: 20px;
+  }
+  
+  .nav-list li a:hover {
+    background-color: white;
+    color: black;
+    border-radius: 3%;
+  }
+  
+  /* Media Query for Mobile Devices */
+@media (max-width: 678px) {
+    .navbar {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .nav-list {
+      text-align: center;
+      display: none;
+    }
+  
+    .nav-list li {
+      margin: 0.3rem 0;
+      border-radius: 20px;
+    }
+
+  }

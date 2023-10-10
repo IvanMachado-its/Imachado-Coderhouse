@@ -1,0 +1,13 @@
+/* Body Styles */
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: $font-size-desktop; /* Set the default font size */
+    @include responsive-font-size();
+  }
+
+  .contact-body * {
+    box-sizing: content-box; 
+  }
+  

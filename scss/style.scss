@@ -1,5 +1,8 @@
 /* CSS Reset (normalize.css or your preferred reset) */
 @import url('normalize.css');
+@import url('body.scss');
+@import url('nav.scss');
+@import url('footer.scss');
 
 /* Variables for Font Sizes */
 $font-size-mobile: 16px;
@@ -23,61 +26,10 @@ $font-size-tv: 24px;
   }
 }
 
-/* Body Styles */
-body {
-  font-family: 'Open Sans', sans-serif;
-  margin: 0;
-  padding: 0;
-  font-size: $font-size-desktop; /* Set the default font size */
-  @include responsive-font-size();
-}
-
-/* Navbar Styles */
-.navbar-background {
-  background-color: black;
-  padding: 1rem;
-  font-family: 'Open Sans', sans-serif;
-  @include responsive-font-size();
-}
-
-/* Footer Styles */
-.footer-container {
-  text-align: center;
-  padding: 1rem;
-  background-color: #000000;
-  color: #fff;
-  border: 1px solid #ffffff;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
-  border-radius: 3px;
-  @include responsive-font-size();
-}
 *, ::after, ::before {
   box-sizing: border-box;
 }
-.contact-body * {
-  box-sizing: content-box; 
-}
 
-/* Navigation Styles */
-.navbar {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.nav-list {
-  list-style: none;
-  display: flex;
-  margin: 0;
-  padding: 0;
-}
-
-.nav-list li {
-  margin: 0 1rem;
-  border-radius: 20px;
-}
-
-/* Button Styles */
 .boton {
   display: block;
   padding: 1rem;
@@ -87,31 +39,8 @@ body {
   transition: background-color 0.3s, color 0.3s;
 }
 
-.nav-list li a:hover {
-  background-color: white;
-  color: black;
-  border-radius: 3%;
-}
 
-/* Media Query for Mobile Devices */
-@media (max-width: 678px) {
-  .navbar {
-    flex-direction: column;
-    align-items: center;
-  }
 
-  .nav-list {
-    text-align: center;
-    display: none;
-  }
-
-  .nav-list li {
-    margin: 0.3rem 0;
-    border-radius: 20px;
-  }
-
-  /* ... other mobile-specific styles ... */
-}
 
 /* Hide Menu Button on Large Screens */
 @media (min-width: 679px) {
@@ -164,29 +93,7 @@ body {
 
 /* ... Rest of your styles ... */
 
-/* Social Links in Footer */
-.social-links {
-  text-align: center;
-  margin-top: 1rem;
-}
 
-.social-links a {
-  display: inline-block;
-  margin: 0.5rem;
-  background-color: transparent;
-  text-decoration: none;
-  border-radius: 50%;
-  transition: background-color 0.3s;
-}
-
-.social-links a img {
-  width: 3rem;
-  height: 3rem;
-}
-
-.social-links a:hover {
-  background-color: rgb(255, 255, 255);
-}
   @media (max-width: 678px) {
     .navbar {
       flex-direction: column;
@@ -640,3 +547,10 @@ body {
         color: white;
     }
 
+    .error-container {
+      text-align: center;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
