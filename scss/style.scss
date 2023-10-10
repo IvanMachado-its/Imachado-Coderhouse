@@ -26,9 +26,6 @@ $font-size-tv: 24px;
   }
 }
 
-*, ::after, ::before {
-  box-sizing: border-box;
-}
 
 .boton {
   display: block;
@@ -355,6 +352,7 @@ $font-size-tv: 24px;
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* Dos columnas de igual tamaño */
     gap: 4rem; /* Agregamos espacio entre los elementos */
+    overflow-x: hidden;
   }
   
   .service {
@@ -378,6 +376,7 @@ $font-size-tv: 24px;
       gap: 1rem;
       text-align: center;
       padding: 1rem;
+      overflow-x: hidden;
     }
   
     .service img {
