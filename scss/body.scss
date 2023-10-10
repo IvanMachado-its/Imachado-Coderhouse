@@ -1,9 +1,28 @@
 /* Body Styles */
+$font-size-mobile: 16px;
+$font-size-tablet: 18px;
+$font-size-desktop: 20px;
+$font-size-tv: 24px;
+
+/* Responsive Font Size Mixin */
+@mixin responsive-font-size() {
+  @media (max-width: 768px) {
+    font-size: $font-size-mobile;
+  }
+  @media (min-width: 769px) and (max-width: 1024px) {
+    font-size: $font-size-tablet;
+  }
+  @media (min-width: 1025px) and (max-width: 1920px) {
+    font-size: $font-size-desktop;
+  }
+  @media (min-width: 1921px) {
+    font-size: $font-size-tv;
+  }
+}
 body {
     font-family: 'Open Sans', sans-serif;
     margin: 0;
     padding: 0;
-    font-size: $font-size-desktop; /* Set the default font size */
     @include responsive-font-size();
   }
 
