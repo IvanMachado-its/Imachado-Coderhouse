@@ -1,8 +1,7 @@
 /* CSS Reset (normalize.css or your preferred reset) */
-@import url('normalize.css');
-@import url('body.scss');
-@import url('nav.scss');
-@import url('footer.scss');
+@import "body.scss";
+@import "nav.scss";
+@import "footer.scss";
 
 /* Variables for Font Sizes */
 $font-size-mobile: 16px;
@@ -25,6 +24,12 @@ $font-size-tv: 24px;
     font-size: $font-size-tv;
   }
 }
+.navbar-background {
+  background-color: black;
+  padding: 1rem;
+  font-family: 'Open Sans', sans-serif;
+  @include responsive-font-size();
+}
 
 
 .boton {
@@ -40,11 +45,7 @@ $font-size-tv: 24px;
 
 
 /* Hide Menu Button on Large Screens */
-@media (min-width: 679px) {
-  #menu-btn {
-    display: none;
-  }
-}
+
 
 /* General Content Styles */
 .container {

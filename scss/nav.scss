@@ -1,10 +1,5 @@
 /* Navbar Styles */
-.navbar-background {
-    background-color: black;
-    padding: 1rem;
-    font-family: 'Open Sans', sans-serif;
-    @include responsive-font-size();
-  }
+
   .navbar {
     display: flex;
     justify-content: center;
@@ -85,5 +80,10 @@
   
     .menu-toggle:checked + .menu-icon + .nav-list {
       display: block;
+    }
+  }
+  @media (min-width: 679px) {
+    #menu-btn {
+      display: none;
     }
   }
