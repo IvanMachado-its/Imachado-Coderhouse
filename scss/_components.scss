@@ -1,0 +1,82 @@
+/* Button Styles for Sections */
+.about-button,
+.servicios-boton,
+.sotify-boton,
+.contacto-boton {
+  display: inline-block;
+  padding: 12px 20px;
+  margin: 5px;
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  border-radius: 25px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.about-button:hover,
+.servicios-boton:hover,
+.sotify-boton:hover,
+.contacto-boton:hover {
+  background-color: white;
+  color: black;
+}
+
+.boton {
+    display: block;
+    padding: 1rem;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+  }
+ 
+  /* Estilos para los botones de sección */
+  .about-button,
+  .servicios-boton,
+  .sotify-boton,
+  .contacto-boton {
+    display: inline-block;
+    padding: 12px 20px;
+    margin: 5px;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .about-button:hover,
+  .servicios-boton:hover,
+  .sotify-boton:hover,
+  .contacto-boton:hover {
+    background-color: white;
+    color: black;
+  }
+/* Estilos del botón "Sobre mí" y otros botones */
+.about-button, .servicios-boton, .sotify-boton, .contacto-boton {
+    display: inline-block;
+    padding: 12px 20px; /* Ajusta el padding para espaciado */
+    margin: 5px; /* Ajusta el margen entre los botones */
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .about-button:hover, .servicios-boton:hover, .sotify-boton:hover, .contacto-boton:hover {
+    background-color: white;
+    color: black;
+  }
+.card-left {
+    box-shadow: rgba(110, 7, 243, 0.4) -5px 5px, rgba(110, 7, 243, 0.3) -10px 10px, rgba(110, 7, 243, 0.2) -15px 15px, rgba(110, 7, 243, 0.1) -20px 20px, rgba(110, 7, 243, 0.05) -25px 25px;
+  }
+  
+  .card-center {
+    box-shadow: rgba(110, 7, 243, 0.4) 0px 5px, rgba(110, 7, 243, 0.3) 0px 10px, rgba(110, 7, 243, 0.2) 0px 15px, rgba(110, 7, 243, 0.1) 0px 20px, rgba(110, 7, 243, 0.05) 0px 25px;
+  }
+  
+  .card-right {
+    box-shadow: rgba(110, 7, 243, 0.4) 5px 5px, rgba(110, 7, 243, 0.3) 10px 10px, rgba(110, 7, 243, 0.2) 15px 15px, rgba(110, 7, 243, 0.1) 20px 20px, rgba(110, 7, 243, 0.05) 25px 25px;
+  }
+
