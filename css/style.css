@@ -187,6 +187,29 @@ body {
   color: black;
 }
 
+.container-nosotros {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.9668242297) 0%, rgb(110, 7, 243) 50%, rgba(0, 0, 0, 0.9668242297) 100%);
+  padding: 3rem;
+  display: grid;
+  flex-wrap: wrap;
+  grid-auto-flow: column;
+  grid-template-columns: 1fr 1fr;
+}
+
+.texto-nosotros {
+  color: #ffffff;
+  text-align: justify;
+  display: grid;
+  padding: 1rem;
+}
+
+.titulo-nosotros {
+  text-align: center;
+  padding: 2rem;
+  color: #000;
+}
+
 .card-left {
   box-shadow: rgba(110, 7, 243, 0.4) -5px 5px, rgba(110, 7, 243, 0.3) -10px 10px, rgba(110, 7, 243, 0.2) -15px 15px, rgba(110, 7, 243, 0.1) -20px 20px, rgba(110, 7, 243, 0.05) -25px 25px;
 }
@@ -203,22 +226,6 @@ body {
   margin: 1rem;
 }
 
-/* ... Rest of your styles ... */
-/* Media Query for Mobile Devices */
-@media (max-width: 678px) {
-  .navbar {
-    flex-direction: column;
-    align-items: center;
-  }
-  .nav-list {
-    text-align: center;
-    display: none;
-  }
-  .nav-list li {
-    margin: 0.3rem 0;
-    border-radius: 20px;
-  }
-}
 @media (max-width: 678px) {
   .navbar {
     flex-direction: column;
@@ -293,12 +300,18 @@ body {
 }
 @media (max-width: 768px) {
   .container-nosotros {
-    grid-template-columns: 1fr; /* Cambia a una sola columna en pantallas de 768px o menos */
-    padding: 0rem;
+    padding: 0.1rem;
+    margin: 0.1rem;
+    gap: 0rem;
+    display: block;
   }
   .texto-nosotros {
-    margin: 1rem;
-    padding: 1rem;
+    grid-template-columns: -1rem;
+  }
+  .img-nosotros {
+    height: 30rem;
+    display: grid;
+    margin: auto;
   }
 }
 /* Variables for Font Sizes */
@@ -583,30 +596,10 @@ section.Servicios ul {
   background-color: #6e07f3;
 }
 
-.container-nosotros {
-  background: rgb(0, 0, 0);
-  background: linear-gradient(90deg, rgba(0, 0, 0, 0.9668242297) 0%, rgb(110, 7, 243) 50%, rgba(0, 0, 0, 0.9668242297) 100%);
-  padding: 3rem;
-  display: grid;
-  grid-row: auto;
-  grid-template-columns: 1fr 1fr;
-  gap: 3rem;
-}
-
-.texto-nosotros {
-  color: #ffffff;
-  text-align: justify;
-  margin: 4rem;
-}
-
-.titulo-nosotros {
-  text-align: center;
-  padding: 2rem;
-  color: #000;
-}
-
 .img-nosotros {
-  height: 20rem;
+  height: 30rem;
+  display: grid;
+  padding: 1rem;
 }
 
 /* Estilos para la sección .testimonios */

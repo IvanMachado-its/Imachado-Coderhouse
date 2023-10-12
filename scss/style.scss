@@ -289,35 +289,12 @@
     background-color: #6e07f3;
   }
   
-  .container-nosotros {
-    background: rgb(0, 0, 0);
-    background: linear-gradient(
-      90deg,
-      rgba(0, 0, 0, 0.9668242296918768) 0%,
-      rgba(110, 7, 243, 1) 50%,
-      rgba(0, 0, 0, 0.9668242296918768) 100%
-    );
-    padding: 3rem;
-    display: grid;
-    grid-row: auto;
-    grid-template-columns: 1fr 1fr;
-    gap: 3rem;
-  }
-  
-  .texto-nosotros {
-    color: #ffffff;
-    text-align: justify;
-    margin: 4rem;
-  }
-  
-  .titulo-nosotros {
-    text-align: center;
-    padding: 2rem;
-    color: #000;
-  }
+ 
   
   .img-nosotros {
-    height: 20rem;
+    height: 30rem;
+    display: grid;
+    padding: 1rem;
   }
   
 

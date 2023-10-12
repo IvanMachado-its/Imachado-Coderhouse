@@ -48,6 +48,7 @@ margin: -1%;
     transition: background-color 0.3s, color 0.3s;
   }
   
+  
   .about-button:hover,
   .servicios-boton:hover,
   .sotify-boton:hover,
@@ -71,6 +72,35 @@ margin: -1%;
     background-color: white;
     color: black;
   }
+
+  .container-nosotros {
+    background: rgb(0, 0, 0);
+    background: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.9668242296918768) 0%,
+      rgba(110, 7, 243, 1) 50%,
+      rgba(0, 0, 0, 0.9668242296918768) 100%
+    );
+    padding: 3rem;
+    display: grid;
+    flex-wrap: wrap;
+    grid-auto-flow: column;
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .texto-nosotros {
+    color: #ffffff;
+    text-align: justify;
+    display: grid;
+    padding: 1rem;
+  }
+  
+  .titulo-nosotros {
+    text-align: center;
+    padding: 2rem;
+    color: #000;
+  }
+  
 .card-left {
     box-shadow: rgba(110, 7, 243, 0.4) -5px 5px, rgba(110, 7, 243, 0.3) -10px 10px, rgba(110, 7, 243, 0.2) -15px 15px, rgba(110, 7, 243, 0.1) -20px 20px, rgba(110, 7, 243, 0.05) -25px 25px;
   }
