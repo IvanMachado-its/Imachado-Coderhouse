@@ -38,7 +38,43 @@
     }
   }
           /* Media query para dispositivos móviles (opcional si lo deseas) */
-          @media (max-width: 678px) {
+          @media (max-width: 1152px) {
+
+            .cards-column{
+                display: block;
+                 }
+               
+            .hero {
+              padding: 1rem;
+            }
+            .service{
+                display: block;
+                margin: 3rem;
+                padding: 4rem;
+            }
+          
+            .services {
+              display: block;
+              text-align: center;
+              padding: 0.2rem;
+              padding-left: 10%;
+              padding-right: 10%;
+              overflow-x: hidden;
+              margin: 1rem;
+
+            }
+          
+            .service img {
+              width: 8rem; /* Reduce el tamaño de las imágenes en dispositivos móviles */
+              height: 8rem;
+            }
+          }
+          @media (max-width: 800px) {
+
+            .cards-column{
+                display: block;
+                 }
+               
             .hero {
               padding: 1rem;
             }
@@ -87,6 +123,7 @@
     }
   }
   @media (max-width: 768px) {
+
     .container-nosotros {
       padding: 0.1rem;
       gap: 0rem;
