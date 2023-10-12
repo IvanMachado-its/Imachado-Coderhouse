@@ -126,6 +126,26 @@ margin: -1%;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
+  /* Estilos para la sección con los servicios */
+  section.Servicios aside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .text-servicios {
+    margin: 3rem;
+  }
+  
+  section.Servicios h2 {
+    border-bottom: 2px solid #333;
+    padding-bottom: 5px;
+  }
+  
+  section.Servicios ul {
+    list-style: disc;
+    padding-left: 20px;
+  }
 
   
   
@@ -174,6 +194,16 @@ margin: -1%;
     border-radius: 4px;
     cursor: pointer;
     transition: background-color 0.3s;
+  }
+  .hero {
+    text-align: center;
+    padding: 2rem;
+    background-color: #ffffff;
+  }
+  
+ 
+  .hero h2 {
+    margin-bottom: 1rem;
   }
 .card-left {
     box-shadow: rgba(110, 7, 243, 0.4) -5px 5px, rgba(110, 7, 243, 0.3) -10px 10px, rgba(110, 7, 243, 0.2) -15px 15px, rgba(110, 7, 243, 0.1) -20px 20px, rgba(110, 7, 243, 0.05) -25px 25px;

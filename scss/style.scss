@@ -119,23 +119,6 @@
     border-radius: 50%;
   }
   
-  /* Estilos para la sección con los servicios */
-  section.Servicios aside {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-  
-  section.Servicios h2 {
-    border-bottom: 2px solid #333;
-    padding-bottom: 5px;
-  }
-  
-  section.Servicios ul {
-    list-style: disc;
-    padding-left: 20px;
-  }
 
   /*HTML SOBRE MI*/
 
@@ -174,19 +157,7 @@
     margin: 5px 0;
     color: #777;
   }
-  .hero {
-    text-align: center;
-    padding: 2rem;
-    background-color: #ffffff;
-  }
-  
-  .text-servicios {
-    margin: 3rem;
-  }
-  
-  .hero h2 {
-    margin-bottom: 1rem;
-  }
+
   
   .btn {
     display: inline-block;
