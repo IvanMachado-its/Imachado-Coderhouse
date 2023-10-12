@@ -111,31 +111,31 @@ body {
   background-color: rgb(255, 255, 255);
 }
 
-/* Variables for Font Sizes */
-.navbar-background {
+/* Button Styles for Sections */
+.about-button,
+.servicios-boton,
+.sotify-boton,
+.contacto-boton {
+  display: inline-block;
+  padding: 12px 20px;
+  margin: 5px;
   background-color: black;
-  padding: 1rem;
-  font-family: "Open Sans", sans-serif;
+  color: white;
+  text-decoration: none;
+  border-radius: 25px;
+  transition: background-color 0.3s, color 0.3s;
 }
-@media (max-width: 768px) {
-  .navbar-background {
-    font-size: 16px;
-  }
+
+.card-text {
+  margin: -1%;
 }
-@media (min-width: 769px) and (max-width: 1024px) {
-  .navbar-background {
-    font-size: 18px;
-  }
-}
-@media (min-width: 1025px) and (max-width: 1920px) {
-  .navbar-background {
-    font-size: 20px;
-  }
-}
-@media (min-width: 1921px) {
-  .navbar-background {
-    font-size: 24px;
-  }
+
+.about-button:hover,
+.servicios-boton:hover,
+.sotify-boton:hover,
+.contacto-boton:hover {
+  background-color: white;
+  color: black;
 }
 
 .boton {
@@ -147,18 +147,7 @@ body {
   transition: background-color 0.3s, color 0.3s;
 }
 
-/* Hide Menu Button on Large Screens */
-/* General Content Styles */
-.container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 90%; /* Width of the central content */
-  max-width: 1200px;
-  padding: 20px;
-}
-
-/* Button Styles for Sections */
+/* Estilos para los botones de sección */
 .about-button,
 .servicios-boton,
 .sotify-boton,
@@ -181,13 +170,37 @@ body {
   color: black;
 }
 
-/* Contact Section Styles */
-.contact-body {
-  font-family: "Open Sans", sans-serif;
+/* Estilos del botón "Sobre mí" y otros botones */
+.about-button, .servicios-boton, .sotify-boton, .contacto-boton {
+  display: inline-block;
+  padding: 12px 20px; /* Ajusta el padding para espaciado */
+  margin: 5px; /* Ajusta el margen entre los botones */
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  border-radius: 25px;
+  transition: background-color 0.3s, color 0.3s;
 }
 
-.fondo-contact {
-  background-image: url("../img/contactos.jpg");
+.about-button:hover, .servicios-boton:hover, .sotify-boton:hover, .contacto-boton:hover {
+  background-color: white;
+  color: black;
+}
+
+.card-left {
+  box-shadow: rgba(110, 7, 243, 0.4) -5px 5px, rgba(110, 7, 243, 0.3) -10px 10px, rgba(110, 7, 243, 0.2) -15px 15px, rgba(110, 7, 243, 0.1) -20px 20px, rgba(110, 7, 243, 0.05) -25px 25px;
+}
+
+.card-center {
+  box-shadow: rgba(110, 7, 243, 0.4) 0px 5px, rgba(110, 7, 243, 0.3) 0px 10px, rgba(110, 7, 243, 0.2) 0px 15px, rgba(110, 7, 243, 0.1) 0px 20px, rgba(110, 7, 243, 0.05) 0px 25px;
+}
+
+.card-right {
+  box-shadow: rgba(110, 7, 243, 0.4) 5px 5px, rgba(110, 7, 243, 0.3) 10px 10px, rgba(110, 7, 243, 0.2) 15px 15px, rgba(110, 7, 243, 0.1) 20px 20px, rgba(110, 7, 243, 0.05) 25px 25px;
+}
+
+.cards-mentor {
+  margin: 1rem;
 }
 
 /* ... Rest of your styles ... */
@@ -250,6 +263,90 @@ body {
     display: none;
   }
 }
+@media (max-width: 678px) {
+  .container-contact {
+    margin: 1rem;
+  }
+}
+/* Media query para dispositivos móviles (opcional si lo deseas) */
+@media (max-width: 678px) {
+  .hero {
+    padding: 1rem;
+  }
+  .services {
+    grid-template-columns: 1fr; /* Cambia a una sola columna en dispositivos móviles */
+    gap: 1rem;
+    text-align: center;
+    padding: 1rem;
+    overflow-x: hidden;
+  }
+  .service img {
+    width: 8rem; /* Reduce el tamaño de las imágenes en dispositivos móviles */
+    height: 8rem;
+  }
+}
+@media (max-width: 678px) {
+  .col {
+    flex: auto;
+  }
+}
+@media (max-width: 768px) {
+  .container-nosotros {
+    grid-template-columns: 1fr; /* Cambia a una sola columna en pantallas de 768px o menos */
+    padding: 0rem;
+  }
+  .texto-nosotros {
+    margin: 1rem;
+    padding: 1rem;
+  }
+}
+/* Variables for Font Sizes */
+.navbar-background {
+  background-color: black;
+  padding: 1rem;
+  font-family: "Open Sans", sans-serif;
+}
+@media (max-width: 768px) {
+  .navbar-background {
+    font-size: 16px;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .navbar-background {
+    font-size: 18px;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1920px) {
+  .navbar-background {
+    font-size: 20px;
+  }
+}
+@media (min-width: 1921px) {
+  .navbar-background {
+    font-size: 24px;
+  }
+}
+
+/* Hide Menu Button on Large Screens */
+/* General Content Styles */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%; /* Width of the central content */
+  max-width: 1200px;
+  padding: 20px;
+}
+
+/* Contact Section Styles */
+.contact-body {
+  font-family: "Open Sans", sans-serif;
+}
+
+.fondo-contact {
+  background-image: url("../img/contactos.jpg");
+}
+
 /* Estilos generales para el contenido */
 .container {
   display: flex;
@@ -258,29 +355,6 @@ body {
   width: 90%; /* El ancho del contenido central */
   max-width: 1200px;
   padding: 20px;
-}
-
-/* Estilos para los botones de sección */
-.about-button,
-.servicios-boton,
-.sotify-boton,
-.contacto-boton {
-  display: inline-block;
-  padding: 12px 20px;
-  margin: 5px;
-  background-color: black;
-  color: white;
-  text-decoration: none;
-  border-radius: 25px;
-  transition: background-color 0.3s, color 0.3s;
-}
-
-.about-button:hover,
-.servicios-boton:hover,
-.sotify-boton:hover,
-.contacto-boton:hover {
-  background-color: white;
-  color: black;
 }
 
 /* Estilos para la sección de contacto */
@@ -292,11 +366,6 @@ body {
   background-image: url("../img/contactos.jpg");
 }
 
-@media (max-width: 678px) {
-  .container-contact {
-    margin: 1rem;
-  }
-}
 .container-contact {
   max-width: 60%;
   margin: 3rem auto;
@@ -382,23 +451,6 @@ body {
   width: 90%; /* El ancho del contenido central */
   max-width: 1200px;
   padding: 20px;
-}
-
-/* Estilos del botón "Sobre mí" y otros botones */
-.about-button, .servicios-boton, .sotify-boton, .contacto-boton {
-  display: inline-block;
-  padding: 12px 20px; /* Ajusta el padding para espaciado */
-  margin: 5px; /* Ajusta el margen entre los botones */
-  background-color: black;
-  color: white;
-  text-decoration: none;
-  border-radius: 25px;
-  transition: background-color 0.3s, color 0.3s;
-}
-
-.about-button:hover, .servicios-boton:hover, .sotify-boton:hover, .contacto-boton:hover {
-  background-color: white;
-  color: black;
 }
 
 /* Estilos para la sección con la imagen */
@@ -516,28 +568,6 @@ section.Servicios ul {
   margin-right: 1rem;
 }
 
-/* Media query para dispositivos móviles (opcional si lo deseas) */
-@media (max-width: 678px) {
-  .hero {
-    padding: 1rem;
-  }
-  .services {
-    grid-template-columns: 1fr; /* Cambia a una sola columna en dispositivos móviles */
-    gap: 1rem;
-    text-align: center;
-    padding: 1rem;
-    overflow-x: hidden;
-  }
-  .service img {
-    width: 8rem; /* Reduce el tamaño de las imágenes en dispositivos móviles */
-    height: 8rem;
-  }
-}
-@media (max-width: 678px) {
-  .col {
-    flex: auto;
-  }
-}
 .text-white {
   background: rgb(255, 255, 255);
   background: linear-gradient(0deg, rgb(255, 255, 255) 0%, rgb(110, 7, 243) 31%);
@@ -576,28 +606,6 @@ section.Servicios ul {
 
 .img-nosotros {
   height: 20rem;
-}
-
-@media (max-width: 768px) {
-  .container-nosotros {
-    grid-template-columns: 1fr; /* Cambia a una sola columna en pantallas de 768px o menos */
-    padding: 0rem;
-  }
-  .texto-nosotros {
-    margin: 1rem;
-    padding: 1rem;
-  }
-}
-.card-left {
-  box-shadow: rgba(110, 7, 243, 0.4) -5px 5px, rgba(110, 7, 243, 0.3) -10px 10px, rgba(110, 7, 243, 0.2) -15px 15px, rgba(110, 7, 243, 0.1) -20px 20px, rgba(110, 7, 243, 0.05) -25px 25px;
-}
-
-.card-center {
-  box-shadow: rgba(110, 7, 243, 0.4) 0px 5px, rgba(110, 7, 243, 0.3) 0px 10px, rgba(110, 7, 243, 0.2) 0px 15px, rgba(110, 7, 243, 0.1) 0px 20px, rgba(110, 7, 243, 0.05) 0px 25px;
-}
-
-.card-right {
-  box-shadow: rgba(110, 7, 243, 0.4) 5px 5px, rgba(110, 7, 243, 0.3) 10px 10px, rgba(110, 7, 243, 0.2) 15px 15px, rgba(110, 7, 243, 0.1) 20px 20px, rgba(110, 7, 243, 0.05) 25px 25px;
 }
 
 /* Estilos para la sección .testimonios */
