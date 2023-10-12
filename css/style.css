@@ -210,6 +210,25 @@ body {
   color: #000;
 }
 
+.services {
+  text-align: center;
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Dos columnas de igual tamaño */
+  gap: 4rem; /* Agregamos espacio entre los elementos */
+  overflow-x: hidden;
+}
+
+.service {
+  background-color: #fff;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.2rem 0.4rem #6E07F3;
+  padding: 1rem;
+  text-align: center;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
 .card-left {
   box-shadow: rgba(110, 7, 243, 0.4) -5px 5px, rgba(110, 7, 243, 0.3) -10px 10px, rgba(110, 7, 243, 0.2) -15px 15px, rgba(110, 7, 243, 0.1) -20px 20px, rgba(110, 7, 243, 0.05) -25px 25px;
 }
@@ -259,6 +278,27 @@ body {
     display: block;
   }
 }
+/* Media query para dispositivos móviles (opcional si lo deseas) */
+@media (max-width: 768px) {
+  .hero {
+    padding: 1rem;
+  }
+  .service {
+    display: block;
+    margin: 1rem;
+  }
+  .services {
+    display: block;
+    text-align: center;
+    padding: 0.2rem;
+    overflow-x: hidden;
+    margin: 0.5rem;
+  }
+  .service img {
+    width: 8rem; /* Reduce el tamaño de las imágenes en dispositivos móviles */
+    height: 8rem;
+  }
+}
 @media (min-width: 679px) {
   #menu-btn {
     display: none;
@@ -273,23 +313,6 @@ body {
 @media (max-width: 678px) {
   .container-contact {
     margin: 1rem;
-  }
-}
-/* Media query para dispositivos móviles (opcional si lo deseas) */
-@media (max-width: 678px) {
-  .hero {
-    padding: 1rem;
-  }
-  .services {
-    grid-template-columns: 1fr; /* Cambia a una sola columna en dispositivos móviles */
-    gap: 1rem;
-    text-align: center;
-    padding: 1rem;
-    overflow-x: hidden;
-  }
-  .service img {
-    width: 8rem; /* Reduce el tamaño de las imágenes en dispositivos móviles */
-    height: 8rem;
   }
 }
 @media (max-width: 678px) {
@@ -560,25 +583,6 @@ section.Servicios ul {
   color: #fff;
   text-decoration: none;
   border-radius: 0.3rem;
-}
-
-.services {
-  text-align: center;
-  padding: 2rem;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr); /* Dos columnas de igual tamaño */
-  gap: 4rem; /* Agregamos espacio entre los elementos */
-  overflow-x: hidden;
-}
-
-.service {
-  background-color: #fff;
-  border-radius: 0.5rem;
-  box-shadow: 0 0.2rem 0.4rem #6E07F3;
-  padding: 1rem;
-  text-align: center;
-  margin-left: 1rem;
-  margin-right: 1rem;
 }
 
 .text-white {

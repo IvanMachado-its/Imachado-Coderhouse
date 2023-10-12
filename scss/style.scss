@@ -4,6 +4,8 @@
 @import "_footer.scss";
 @import "_components.scss";
 @import "_media.scss";
+
+
 /* Variables for Font Sizes */
 
 .navbar-background {
@@ -250,24 +252,7 @@
     border-radius: 0.3rem;
   }
   
-  .services {
-    text-align: center;
-    padding: 2rem;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Dos columnas de igual tamaño */
-    gap: 4rem; /* Agregamos espacio entre los elementos */
-    overflow-x: hidden;
-  }
-  
-  .service {
-    background-color: #fff;
-    border-radius: 0.5rem;
-    box-shadow: 0 0.2rem 0.4rem #6E07F3;
-    padding: 1rem;
-    text-align: center;
-    margin-left: 1rem;
-    margin-right: 1rem;
-  }
+ 
   
 
   
