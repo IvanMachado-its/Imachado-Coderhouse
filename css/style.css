@@ -229,6 +229,10 @@ body {
   margin-right: 1rem;
 }
 
+.cards-column {
+  height: 100%;
+}
+
 .card-left {
   box-shadow: rgba(110, 7, 243, 0.4) -5px 5px, rgba(110, 7, 243, 0.3) -10px 10px, rgba(110, 7, 243, 0.2) -15px 15px, rgba(110, 7, 243, 0.1) -20px 20px, rgba(110, 7, 243, 0.05) -25px 25px;
 }
@@ -279,7 +283,7 @@ body {
   }
 }
 /* Media query para dispositivos móviles (opcional si lo deseas) */
-@media (max-width: 768px) {
+@media (max-width: 678px) {
   .hero {
     padding: 1rem;
   }
